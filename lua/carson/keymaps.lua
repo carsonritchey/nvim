@@ -12,6 +12,7 @@ keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<leader>h", ":e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>", opts)
 
     -- visual mode --
 -- stay in indent mode
