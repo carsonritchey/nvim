@@ -34,7 +34,7 @@ vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 
 vim.opt.shortmess:append "c"
-vim.cmd [[set iskeyword+=-]]
+--vim.cmd [[set iskeyword+=-]]
 vim.cmd "nnoremap ; :"
 
 local autosave = require("autosave")
