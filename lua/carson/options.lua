@@ -34,14 +34,14 @@ vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 
 vim.opt.shortmess:append "c"
---vim.cmd [[set iskeyword+=-]]
+vim.cmd [[set iskeyword-=_]]
 vim.cmd "nnoremap ; :"
 
 local autosave = require("autosave")
 autosave.setup(
     {
         enabled = true,
-        execution_message = "AutoSave: saved at " .. vim.fn.strftime("%H:%M:%S"),
+        execution_message = "auto-saved @ " .. vim.fn.strftime("%H:%M:%S"),
         events = {"InsertLeave", "TextChanged"},
         conditions = {
             exists = true,
