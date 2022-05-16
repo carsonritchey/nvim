@@ -53,6 +53,9 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "L3MON4D3/LuaSnip" -- snippet engine
 
+  -- lsp stuff
+  use "neovim/nvim-lspconfig" -- collection of configurations for LSP client
+
   -- autosave
   use "Pocco81/AutoSave.nvim"
 
