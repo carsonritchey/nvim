@@ -51,13 +51,16 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
-
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use "L3MON4D3/LuaSnip" -- snippet engine
 
   -- autosave
   use "Pocco81/AutoSave.nvim"
+
+  -- misc 
+  use "vim-jp/vim-cpp" -- better cpp syntax highlighting
+  use "kyazdani42/nvim-web-devicons" -- dev icons
+  use "romgrk/barbar.nvim" -- pretty tabbar 
+  use "lukas-reineke/indent-blankline.nvim" -- indentation graphic
 
   -- colorscheme
   use "sainnhe/everforest"
