@@ -19,11 +19,5 @@ keymap("n", "<leader>h", ":e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>",
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
-keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
-keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+-- misc
 keymap("v", "p", '"_dP', opts) -- pasting and replacing text in visual mode keeps the pasted text, rather than making the removed text become the new pasting text
