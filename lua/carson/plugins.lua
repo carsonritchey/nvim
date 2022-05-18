@@ -60,7 +60,7 @@ return packer.startup(function(use)
   use "Pocco81/AutoSave.nvim"
 
   -- misc 
-  use "vim-jp/vim-cpp" -- better cpp syntax highlighting
+  use "octol/vim-cpp-enhanced-highlight" -- better cpp syntax highlighting
   use "kyazdani42/nvim-web-devicons" -- dev icons
   use "romgrk/barbar.nvim" -- pretty tabbar 
   use "lukas-reineke/indent-blankline.nvim" -- indentation graphic
